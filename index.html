@@ -1,89 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Compusevicios</title>
-	<style type="text/css">
-		body{
+	<style>
+		body {
 			background-color: skyblue;
+			margin: 0;
+			font-family: Arial, sans-serif;
 		}
-		header{
-			border: 5px, solid, black;
+		header {
+			border: 5px solid black;
 			min-height: 100px;
 			width: 100%;
 			background-color: gold;
-			font-family: comic sans ms;
 			text-align: center;
-			font-size: 4em;
+			font-size: 2.5em; /* Ajustado para ser más responsivo */
 			border-radius: 30px;
 			text-shadow: 2px 2px 15px red;
+			padding: 20px 0;
 		}
-		nav{
+		nav {
 			height: 50px;
 			width: 95%;
-			font-family: Arial;
 			background-color: #2874a6;
 			border-radius: 20px;
-			margin-top: 10px;
+			margin: 10px auto;
 			padding-left: 5%;
-			font-size: 1.5em;
+			font-size: 1.2em; /* Ajustado para ser más responsivo */
 			box-shadow: 2px 2px 15px red;
 		}
-		ul{
+		ul {
 			list-style: none;
-			display: grid;
-			grid-template-columns: auto auto auto auto auto;
-			grid-template-rows: 50px;
+			display: flex; /* Cambiado a flexbox para mejor responsividad */
+			justify-content: space-around;
+			padding: 0;
+			margin: 0;
 		}
-		main{
+		main {
 			border-radius: 30px;
 			min-height: calc(100vh - 200px);
-			width: 100%;
-			display: flex;	
-			margin-top: 10px;
+			width: 95%;
+			display: flex;
+			margin: 10px auto;
+			flex-wrap: wrap; /* Permite que los elementos se acomoden */
 		}
-		section{
-			min-height: 100%;
-			width: 80%;
-			padding-left: 3%;
+		section {
+			flex: 1; /* Se adapta al espacio disponible */
+			padding: 20px;
 			background-color: #c8d8dc;
+			margin-right: 10px; /* Espacio entre sección y aside */
+			min-width: 300px; /* Ancho mínimo */
 		}
-		h1{
+		h1 {
 			text-shadow: 2px 2px 15px red;
+			font-size: 1.8em; /* Ajustado para ser más responsivo */
 		}
-		aside{
-			min-height: 100%;
-			width: 19%;
+		aside {
+			width: 300px; /* Ancho fijo */
 			background-color: white;
 			border-radius: 10px;
-			padding-left: 3%;
+			padding: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
-		footer{
-			border: 5px, solid, black;
+		footer {
+			border: 5px solid black;
 			height: 100px;
 			width: 100%;
+			text-align: center;
+			line-height: 100px; /* Centrado vertical */
 		}
-		ol{
+		ol {
 			list-style: none;
+			padding: 0;
 		}
-		img{
-			height: 200px;
-			width: 200px;
+		img {
+			width: 100%; /* Imagen responsiva */
+			max-width: 200px; /* Ancho máximo */
+			height: auto; /* Altura automática para mantener proporción */
+			margin: 5px; /* Espaciado entre imágenes */
 		}
-		div{
-			display: grid;
-			grid-template-columns: auto auto auto auto;
+		div {
+			display: flex;
+			flex-wrap: wrap; /* Permite que las imágenes se acomoden */
+			justify-content: space-around; /* Espaciado entre imágenes */
+		}
+		@media (max-width: 600px) {
+			header {
+				font-size: 2em; /* Ajustado para pantallas pequeñas */
+			}
+			nav {
+				font-size: 1em; /* Ajustado para pantallas pequeñas */
+			}
+			aside {
+				width: 100%; /* Aside ocupa todo el ancho en pantallas pequeñas */
+				margin-top: 10px; /* Espacio encima del aside */
+			}
 		}
 	</style>
 </head>
 <body>
-	Eber Oswaldo Castillo Morales 
 	<header>EMPRESA COMPU-SERVICIOS</header>
 	<nav>
 		<ul>
 			<li><a href="#ini">Inicio</a></li>
-			<li><a href="#mis">Misió</a></li>
+			<li><a href="#mis">Misión</a></li>
 			<li><a href="#vis">Visión</a></li>
 			<li><a href="#pro">Productos</a></li>
 			<li><a href="#ser">Servicios</a></li>
@@ -103,15 +125,14 @@
 			<h1 id="pro">Productos</h1>
 			Nuestros productos son ...
 			<div>
-			<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
-			<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
-			<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
-			<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
-			<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
-			<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
-			<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
-			<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
-
+				<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
+				<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
+				<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
+				<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
+				<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
+				<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
+				<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
+				<img src="https://electronicapanamericana.com/wp-content/uploads/Sin-titulo-1-146.png" title="Computadora" alt="PC">
 			</div>
 			<hr>
 			<h1 id="ser">Servicios</h1>
@@ -119,15 +140,13 @@
 		</section>
 		<aside>
 			<ol>
-				<li><a href="https://www.aprender21.com/blog/que-es-reparacion-de-pc" target="blank">Reparación de computadoras</a> </li>
-				<li><a href="https://www.crucial.mx/articles/pc-builders/how-to-clean-the-inside-of-a-computer" target="blank">Limpieza de equipos</a></li>
-				<li><a href="https://www.zendesk.com.mx/blog/definicion-de-soporte-tecnico/" target="blank">Soporte Técnico</a> </li>
-				<li><a href="https://www.imeqmo.com/" target="blank">Venta de artículos</a> </li>
+				<li><a href="https://www.aprender21.com/blog/que-es-reparacion-de-pc" target="_blank">Reparación de computadoras</a></li>
+				<li><a href="https://www.crucial.mx/articles/pc-builders/how-to-clean-the-inside-of-a-computer" target="_blank">Limpieza de equipos</a></li>
+				<li><a href="https://www.zendesk.com.mx/blog/definicion-de-soporte-tecnico/" target="_blank">Soporte Técnico</a></li>
+				<li><a href="https://www.imeqmo.com/" target="_blank">Venta de artículos</a></li>
 			</ol>
-
 		</aside>
 	</main>
 	<footer>e-mail compuserviciossa@gmail.com</footer>
-
 </body>
 </html>
